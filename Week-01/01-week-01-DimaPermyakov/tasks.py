@@ -109,12 +109,7 @@ def task9() -> str:
     """
     day, month, year = list(map(int, input().split('-')))
     user_date = date(year, month, day)
-    week_day = user_date.strftime("%A")
-
-    while week_day != 'Monday':
-        user_date -= timedelta(days=1)
-        week_day = user_date.strftime('%A')
-
+    user_date -= timedelta(days=user_date.weekday())
     return f'{"0" + str(user_date.day) if user_date.day < 10 else user_date.day}-' \
            f'{"0" + str(user_date.month) if user_date.month < 10 else user_date.month}-{user_date.year}'
 
@@ -124,4 +119,5 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    # main()
+    print('123456789'[:-1])
