@@ -1,5 +1,5 @@
 # Digital-academy
-[![Dmitriy](https://github.com/IU5-IT/Digital-academy/actions/workflows/main.yml/badge.svg?color=brightgreen)](https://github.com/IU5-IT/Digital-academy/actions/workflows/main.yml/badge.svg)
+[![Dmitriy](https://github.com/IU5-IT/Digital-academy/blob/main/.github/workflows/python-publish.yml/badge.svg?color=brightgreen)](https://github.com/IU5-IT/Digital-academy/actions/workflows/main.yml/badge.svg)
 ![GitHub](https://img.shields.io/github/license/IU5-IT/Digital-academy?color=brightgreen)
 
 Digital academy at BMSTU 2022-2023<br>
