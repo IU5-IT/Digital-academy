@@ -61,17 +61,10 @@ def task6() -> str:
     Нужно вывести их на экран от большего к меньшему, также разделяя их концом строки.
     :return: Строка.
     """
-    text = ''
-    for i in range(5):
-        text += input()
-        text += '\n'
-    text = text[:-1].split('\n')
-
-    # Можно в одну строчку сделать, но, полагаю, это не очень хорошая идея)).
-    numbers = list(map(lambda num: int(num), text))
-    numbers = '\n'.join(map(lambda num: str(num), sorted(numbers, reverse=True)))
-
-    return numbers
+    lst = []
+    for _ in range(5):
+        lst.append(int(input()))
+    return '\n'.join(map(str, sorted(lst, reverse=True)))
 
 
 def task7() -> str:
