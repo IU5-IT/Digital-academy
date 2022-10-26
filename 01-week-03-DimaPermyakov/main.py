@@ -3,26 +3,29 @@ import datetime
 
 
 def gift_count(budget, month, birthdays):
-    counter = 0
-    for el in birthdays.values():
-        if el.month == month:
-            counter += 1
-    pass
+    counter = list(map(lambda el: el.month, [*birthdays.values()])).count(month)
+    people = sorted(
+        [f'{name} ({date.day}.{date.month}.{date.year})' for name, date in birthdays.items() if date.month == month])
+    text = str(people).replace("'", '')[1:-1]
+    return f'Именинники в месяце {counter}: {text}. При бюджете {budget} они получат по {int(budget / counter)} рублей.'
+
+
+def lists_sum(*args, unique=False) -> int:
+    sum_res = 0
+    if not unique:
+        for el in args:
+            sum_res += sum(el)
+    else:
+        lst = list(map(lambda el1: set(el1), args))
+        print(lst)
+        for el in lst:
+            sum_res += sum(el)
+
+    return sum_res
 
 
 def main():
-    birthdays = {
-        "Иванов Иван Иванович": datetime.date(1989, 5, 1),
-        "Петров Петр Петрович": datetime.date(1998, 5, 6)
-    }
-    print(birthdays.values())
-    for el in birthdays.values():
-        if el.month == 5:
-            print('EA')
-    # date = datetime.date(1999, 11, 28)
-
-    # gift_count(20000, 5, birthdays)
-    # gift_count(budget=20000, month=5, birthdays=birthdays)
+    print(lists_sum([1, 1, 1], [1, 1], unique=True) == 1)
 
 
 if __name__ == '__main__':
