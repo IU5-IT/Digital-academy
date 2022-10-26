@@ -8,3 +8,4 @@ Professor - [🧑‍💻](https://github.com/romvano/dc-web-developer-2022)
 ## 📈 Timeline:
 1. [Week-01](https://github.com/IU5-IT/Digital-academy/tree/main/01-week-01-DimaPermyakov)
 2. [Week-02](https://github.com/IU5-IT/Digital-academy/tree/main/01-week-02-DimaPermyakov)
+3. [Week-03](https://github.com/IU5-IT/Digital-academy/tree/main/01-week-03-DimaPermyakovя)
