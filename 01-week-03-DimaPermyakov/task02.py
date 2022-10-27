@@ -9,9 +9,6 @@ def task02():
     res1 = lists_sum([1, 1], [1], [1, 2, 3])
     res2 = lists_sum([1, 1, 1], [1, 1], unique=True)
     res3 = lists_sum([1, 1, 1], unique=False)
-    print(lists_sum([1, 2, 1, 2]))
-    print(res1, res2, res3, sep='\n')
-
     return res1, res2, res3
 
 

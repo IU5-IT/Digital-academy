@@ -1,12 +1,11 @@
 # Copyright © 2022 mightyK1ngRichard <dimapermyakov55@gmail.com>
 
 def get_balance(name: str, transactions: list) -> int:
-    return sum([dict_el['amount'] for dict_el in list(filter(lambda el: el['name'] == name, transactions))])
+    return sum([el['amount'] for el in transactions if el['name'] == name])
 
 
 def count_debts(names: list, amount: int | float, transactions: list) -> dict:
-    return {name: 0 if get_balance(name, transactions) > amount else amount - get_balance(name, transactions) for name
-            in names}
+    return {name: max(amount - get_balance(name, transactions), 0) for name in names}
 
 
 def task03():
