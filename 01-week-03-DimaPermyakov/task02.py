@@ -1,6 +1,6 @@
 # Copyright © 2022 mightyK1ngRichard <dimapermyakov55@gmail.com>
 
-def lists_sum(*args, unique=False) -> int:
+def lists_sum(*args: list, unique=False) -> int:
     return \
         [sum([sum(el) for el in args]) if unique else sum([sum(el) for el in list(map(lambda el1: set(el1), args))])][0]
 
