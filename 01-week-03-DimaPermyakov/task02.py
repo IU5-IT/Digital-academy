@@ -1,8 +1,7 @@
 # Copyright © 2022 mightyK1ngRichard <dimapermyakov55@gmail.com>
 
 def lists_sum(*args: list, unique: bool = False) -> int:
-    return [sum([el for el in set([el for lst_wrapper in args for el in lst_wrapper])]) if unique else sum(
-        [sum(el) for el in args])][0]
+    return [sum({el for lst_wrapper in args for el in lst_wrapper}) if unique else sum([sum(el) for el in args])][0]
 
 
 def task02():
