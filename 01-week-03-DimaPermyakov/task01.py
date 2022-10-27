@@ -3,8 +3,8 @@
 import datetime
 
 
-def gift_count(budget, month, birthdays):
-    counter = list(map(lambda el: el.month, [*birthdays.values()])).count(month)
+def gift_count(budget: [int, float], month: int, birthdays: dict) -> str:
+    counter = [date.month for date in birthdays.values()].count(month)
     people = sorted(
         [f'{name} ({date.day}.{date.month}.{date.year})' for name, date in birthdays.items() if date.month == month])
     text = str(people).replace("'", '')[1:-1]
