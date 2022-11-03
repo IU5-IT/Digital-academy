@@ -38,7 +38,8 @@ def main():
            'abc@abc.',
            'abc@abc@abc'
            ]
-
+    for el in lst:
+        print(f"{el} ==> {check_string(el)}")
 
 
 if __name__ == '__main__':
