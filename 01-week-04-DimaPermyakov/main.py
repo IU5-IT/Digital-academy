@@ -27,19 +27,7 @@ def check_string(string) -> bool:
 
 
 def main():
-    lst = ['abc@abc.ab',
-           'abc@abc.ab.ab',
-           'a@ab.ab',
-           'abc.abc@abc.abc',
-           '@abc.abc',
-           'abc@abc',
-           'abc@abc.a',
-           'abc@abc.abc.a',
-           'abc@abc.',
-           'abc@abc@abc'
-           ]
-    for el in lst:
-        print(f"{el} ==> {check_string(el)}")
+    pass
 
 
 if __name__ == '__main__':
