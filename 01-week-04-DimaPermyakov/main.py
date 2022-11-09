@@ -27,7 +27,7 @@ def check_string(string) -> bool:
 
 
 def main():
-    pass
+    print(check_string('8(916)010-01-20'))
 
 
 if __name__ == '__main__':
