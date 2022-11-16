@@ -1,5 +1,7 @@
-# Python. Module 1.
+# Digital-academy
 <img src="https://img.shields.io/github/license/DimaPermyakov/IU5?color=brightgreen" alt="MIT License"> <img src="https://img.shields.io/badge/language-Python-green.svg" alt="Python Language">
+
+# Python. Module 1.
 
 ## 📈 Timeline:
 1. [Week-01](https://github.com/IU5-IT/Digital-academy/tree/main/Python-01/01-week-01-DimaPermyakov)
