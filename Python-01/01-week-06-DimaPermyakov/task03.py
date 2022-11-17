@@ -30,7 +30,8 @@ class Booking:
     def start(self, new_start):
         self._start = new_start
         self._duration = (new_start - self._end).seconds // 60
-        self._start_time = new_start.strftime('%H-%M')
+        self._start_time = new_start.strftime('%H:%M')
+        self._start_date = new_start.strftime('%Y-%m-%d')
 
     @property
     def end(self):
@@ -40,7 +41,8 @@ class Booking:
     def end(self, new_end):
         self._end = new_end
         self._duration = (self._start - new_end).seconds // 60
-        self._end_date: str = new_end.strftime('%Y-%m-%d')
+        self._end_date = new_end.strftime('%Y-%m-%d')
+        self._end_time = new_end.strftime('%H:%M')
 
     @property
     def duration(self):
