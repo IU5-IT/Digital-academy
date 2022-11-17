@@ -4,4 +4,4 @@
 # [Tasks conditions](https://github.com/IU5-IT/Digital-academy/wiki/Week6)
 - [ ] [Task 1]()
 - [ ] [Task 2]()
-- [ ] [Task 2]()
+- [ ] [Task 3]()
