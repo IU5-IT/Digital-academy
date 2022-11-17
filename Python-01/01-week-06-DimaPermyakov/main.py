@@ -1,7 +1,7 @@
 # Copyright © 2022 mightyK1ngRichard <dimapermyakov55@gmail.com>
 
 def main():
-    pass
+    print('Welcome to 6ht Week')
 
 
 if __name__ == '__main__':
