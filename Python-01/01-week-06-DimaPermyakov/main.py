@@ -1,7 +1,7 @@
 # Copyright © 2022 mightyK1ngRichard <dimapermyakov55@gmail.com>
 
 def main():
-    print('Welcome to 6ht Week')
+    print('Welcome to 6th Week')
 
 
 if __name__ == '__main__':
