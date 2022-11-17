@@ -4,13 +4,13 @@ import re
 
 class Field(dict):
     def __getitem__(self, key):
-        return super(Field, self).__getitem__(self.__get_data(key))
+        return super(Field, self).__getitem__(self._get_data(key))
 
     def __setitem__(self, key, value):
-        super(Field, self).__setitem__(self.__get_data(key), value)
+        super(Field, self).__setitem__(self._get_data(key), value)
 
     def __delitem__(self, key):
-        super(Field, self).__delitem__(self.__get_data(key))
+        super(Field, self).__delitem__(self._get_data(key))
 
     def __iter__(self):
         for el in self.values():
@@ -20,10 +20,10 @@ class Field(dict):
         return None
 
     def __contains__(self, key):
-        return self[self.__get_data(key)] != self.__missing__(1)
+        return self[self._get_data(key)] != self.__missing__(1)
 
     @staticmethod
-    def __get_data(data):
+    def _get_data(data):
         if type(data) == str:
             a = str(re.sub(r'\d+', '', data))
             b = re.findall(r'\d+', data)
