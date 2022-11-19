@@ -29,7 +29,7 @@ class Booking:
     @start.setter
     def start(self, new_start):
         self._start = new_start
-        self._duration = (new_start - self._end).seconds // 60
+        self._duration = (self._end - new_start).seconds // 60
         self._start_time = new_start.strftime('%H:%M')
         self._start_date = new_start.strftime('%Y-%m-%d')
 
@@ -40,7 +40,7 @@ class Booking:
     @end.setter
     def end(self, new_end):
         self._end = new_end
-        self._duration = (self._start - new_end).seconds // 60
+        self._duration = (new_end - self._start).seconds // 60
         self._end_date = new_end.strftime('%Y-%m-%d')
         self._end_time = new_end.strftime('%H:%M')
 
@@ -96,25 +96,33 @@ def register_booking(book: Booking):
 
 
 def main():
-    result = create_booking(
+    #     result = create_booking(
+    #         "Вагнер",
+    #         datetime.datetime(2022, 9, 1, 14),
+    #         datetime.datetime(2022, 9, 1, 15, 15)
+    #     )
+    #     print(result)
+    #     r = """{
+    #   "created": false,
+    #   "msg": "Комната занята",
+    #   "booking": {
+    #     "room_name": "Вагнер",
+    #     "start_date": "2022-09-01",
+    #     "start_time": "14:00",
+    #     "end_date": "2022-09-01",
+    #     "end_time": "15:15",
+    #     "duration": 75
+    #   }
+    # }"""
+    #     print(r == result)
+    booking = Booking(
         "Вагнер",
         datetime.datetime(2022, 9, 1, 14),
         datetime.datetime(2022, 9, 1, 15, 15)
     )
-    print(result)
-    r = """{
-  "created": false,
-  "msg": "Комната занята",
-  "booking": {
-    "room_name": "Вагнер",
-    "start_date": "2022-09-01",
-    "start_time": "14:00",
-    "end_date": "2022-09-01",
-    "end_time": "15:15",
-    "duration": 75
-  }
-}"""
-    print(r == result)
+    print(booking.duration)
+    booking.start = datetime.datetime(2022, 9, 1, 13)
+    print(booking.duration)
 
 
 if __name__ == '__main__':
