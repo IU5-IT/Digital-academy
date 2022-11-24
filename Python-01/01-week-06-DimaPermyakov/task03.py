@@ -96,33 +96,25 @@ def register_booking(book: Booking):
 
 
 def main():
-    #     result = create_booking(
-    #         "Вагнер",
-    #         datetime.datetime(2022, 9, 1, 14),
-    #         datetime.datetime(2022, 9, 1, 15, 15)
-    #     )
-    #     print(result)
-    #     r = """{
-    #   "created": false,
-    #   "msg": "Комната занята",
-    #   "booking": {
-    #     "room_name": "Вагнер",
-    #     "start_date": "2022-09-01",
-    #     "start_time": "14:00",
-    #     "end_date": "2022-09-01",
-    #     "end_time": "15:15",
-    #     "duration": 75
-    #   }
-    # }"""
-    #     print(r == result)
-    booking = Booking(
+    result = create_booking(
         "Вагнер",
         datetime.datetime(2022, 9, 1, 14),
         datetime.datetime(2022, 9, 1, 15, 15)
     )
-    print(booking.duration)
-    booking.start = datetime.datetime(2022, 9, 1, 13)
-    print(booking.duration)
+    print(result)
+    r = """{
+      "created": false,
+      "msg": "Комната занята",
+      "booking": {
+        "room_name": "Вагнер",
+        "start_date": "2022-09-01",
+        "start_time": "14:00",
+        "end_date": "2022-09-01",
+        "end_time": "15:15",
+        "duration": 75
+      }
+    }"""
+    print(r == result)
 
 
 if __name__ == '__main__':
