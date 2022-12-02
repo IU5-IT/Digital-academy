@@ -7,6 +7,9 @@ Professor - [🧑‍💻](https://github.com/romvano/dc-web-developer-2022)
 
 # 📈 Timeline:
 ### Module 1. Python.
+<details>
+  <summary> Click to expand </summary>
+  
 1. [Week-01](https://github.com/IU5-IT/Digital-academy/tree/main/Python-01/01-week-01-DimaPermyakov)
 2. [Week-02](https://github.com/IU5-IT/Digital-academy/tree/main/Python-01/01-week-02-DimaPermyakov)
 3. [Week-03](https://github.com/IU5-IT/Digital-academy/tree/main/Python-01/01-week-03-DimaPermyakov)
@@ -14,3 +17,8 @@ Professor - [🧑‍💻](https://github.com/romvano/dc-web-developer-2022)
 5. [Week-05](https://github.com/IU5-IT/Digital-academy/tree/main/Python-01/01-week-05-DimaPermyakov)
 6. [Week-06](https://github.com/IU5-IT/Digital-academy/tree/main/Python-01/01-week-06-DimaPermyakov)
 7. [Week-07](https://github.com/IU5-IT/Digital-academy/tree/main/Python-01/01-week-07-DimaPermyakov)
+</details>
+
+### Module 2. Soon.
+<details>
+  <summary> Click to expand </summary>
