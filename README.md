@@ -10,15 +10,25 @@ Professor - [🧑‍💻](https://github.com/romvano/dc-web-developer-2022)
 <details>
   <summary> Click to expand </summary>
   
-1. [Week-01](https://github.com/IU5-IT/Digital-academy/tree/main/Python-01/01-week-01-DimaPermyakov)
-2. [Week-02](https://github.com/IU5-IT/Digital-academy/tree/main/Python-01/01-week-02-DimaPermyakov)
-3. [Week-03](https://github.com/IU5-IT/Digital-academy/tree/main/Python-01/01-week-03-DimaPermyakov)
-4. [Week-04](https://github.com/IU5-IT/Digital-academy/tree/main/Python-01/01-week-04-DimaPermyakov)
-5. [Week-05](https://github.com/IU5-IT/Digital-academy/tree/main/Python-01/01-week-05-DimaPermyakov)
-6. [Week-06](https://github.com/IU5-IT/Digital-academy/tree/main/Python-01/01-week-06-DimaPermyakov)
-7. [Week-07](https://github.com/IU5-IT/Digital-academy/tree/main/Python-01/01-week-07-DimaPermyakov)
+1. [Week-01](https://github.com/IU5-IT/Digital-academy/tree/main/Python/01-week-01-DimaPermyakov)
+2. [Week-02](https://github.com/IU5-IT/Digital-academy/tree/main/Python/01-week-02-DimaPermyakov)
+3. [Week-03](https://github.com/IU5-IT/Digital-academy/tree/main/Python/01-week-03-DimaPermyakov)
+4. [Week-04](https://github.com/IU5-IT/Digital-academy/tree/main/Python/01-week-04-DimaPermyakov)
+5. [Week-05](https://github.com/IU5-IT/Digital-academy/tree/main/Python/01-week-05-DimaPermyakov)
+6. [Week-06](https://github.com/IU5-IT/Digital-academy/tree/main/Python/01-week-06-DimaPermyakov)
+7. [Week-07](https://github.com/IU5-IT/Digital-academy/tree/main/Python/01-week-07-DimaPermyakov)
 </details>
 
-### Module 2. Soon.
+### Module 2.
 <details>
   <summary> Click to expand </summary>
+  
+1. [Linux commands]()
+2. [Git commands]()
+</details>
+
+### Module 3. Soon.
+<details>
+  <summary> Click to expand </summary>
+
+</details>
