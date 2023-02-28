@@ -31,4 +31,5 @@ Professor - [🧑‍💻](https://github.com/romvano/dc-web-developer-2022)
 <details>
   <summary> Click to expand </summary>
 
+1. [Week-01](https://github.com/IU5-IT/Digital-academy/tree/main/SQL/week-1)
 </details>
