@@ -5,4 +5,4 @@
 
 ## 📈 Timeline:
 1. [Week-01](https://github.com/IU5-IT/Digital-academy/tree/main/SQL/03-week-01-DimaPermyakov)
-2. [Week-02]](https://github.com/IU5-IT/Digital-academy/tree/main/SQL/03-week-02-DimaPermyakov)
+2. [Week-02](https://github.com/IU5-IT/Digital-academy/tree/main/SQL/03-week-02-DimaPermyakov)
