@@ -1,0 +1,6 @@
+SELECT DISTINCT
+    region
+FROM stores
+ORDER BY  region
+LIMIT 3
+OFFSET 5;
