@@ -65,23 +65,22 @@ WHERE customer_id IS NOT NULL AND sale_date = '2020-02-14';
 
 -- 13. Выведите все данные по ценам, которые действовали в течение февраля 2020 года 
 -- (учтите оба поля start_date и end_date)
-SELECT price
+SELECT *
 FROM prices
 WHERE start_date >= '2020-02-01' AND end_date <= '2020-02-29';
 
 --14. Мы хотим сделать акцию к международному дню буквы К и оценить, сколько покупателей могут праздновать этот день.
 -- Выведите все customer_id, имена и фамилии покупателей, у которых имя или фамилия начинаются с буквы К (кириллицей).
-
-SELECT customer_id
+SELECT customer_id, name, surname
 FROM customers
 WHERE name LIKE 'К%' OR surname LIKE 'К%';
 
--- 15. Выведите все уникальные customer_id покупателей, которые совершали покупки в феврале 2020 года, 
+-- 15. Выведите все уникальные customer_id покупателей, которые совершали покупки в феврале 2020 года,
 -- в порядке возрастания.
 SELECT DISTINCT customer_id
 FROM sales
-WHERE sale_date BETWEEN '2020-02-01' AND '2020-02-29'
-ORDER BY customer_id DESC;
+WHERE sale_date BETWEEN '2020-02-01' AND '2020-02-29'  
+ORDER BY customer_id;
 
 -- 16. Посчитайте количество магазинов в регионе 5. Выведите единственное число.
 SELECT count(*) 
@@ -93,6 +92,12 @@ WHERE region = 5;
 SELECT product_id, AVG(price) as avg_price
 FROM prices
 WHERE EXTRACT(YEAR FROM start_date) = '2020' AND EXTRACT(YEAR FROM end_date) = '2020'
+GROUP BY product_id
+ORDER BY product_id;
+-- Второе решение.
+SELECT product_id, AVG(price) as avg_price
+FROM prices
+WHERE start_date <= '2020-12-31' AND end_date >= '2020-01-01'
 GROUP BY product_id
 ORDER BY product_id;
 
@@ -112,11 +117,8 @@ SELECT count(*) FROM
     HAVING count(*) > 186000
 ) d1;
 
--- 20. Выведите количество продаж по месяцам в 2020 году. Формат вывода: двузначный номер месяца - количество продаж.
-SELECT EXTRACT(MONTH FROM sale_date) as month, count(*)
-FROM sales
-WHERE EXTRACT(YEAR FROM sale_date) = '2020'
-GROUP BY month;
+
+
 
 -- 21. Выведите самый популярный product_id среди незарегистрированных клиентов.
 SELECT product_id FROM

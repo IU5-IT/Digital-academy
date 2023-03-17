@@ -27,9 +27,10 @@ Professor - [🧑‍💻](https://github.com/romvano/dc-web-developer-2022)
 2. [Git commands]()
 </details>
 
-### Module 3. Soon.
+### Module 3. SQL.
 <details>
   <summary> Click to expand </summary>
 
 1. [Week-01](https://github.com/IU5-IT/Digital-academy/tree/main/SQL/03-week-01-DimaPermyakov)
+2. [Week-02](https://github.com/IU5-IT/Digital-academy/tree/main/SQL/03-week-02-DimaPermyakov)
 </details>
