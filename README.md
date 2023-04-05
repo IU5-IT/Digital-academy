@@ -1,5 +1,5 @@
 # Digital-academy
-<img src="https://img.shields.io/github/license/DimaPermyakov/IU5?color=brightgreen" alt="MIT License"> <img src="https://img.shields.io/badge/language-Python-blue.svg" alt="Python Language">
+<img src="https://img.shields.io/github/license/mightyK1ngRichard/IU5?color=brightgreen" alt="MIT License"/> <img src="https://img.shields.io/badge/language-Python | Django-blue.svg"/> <img src="https://img.shields.io/badge/language-PostgreSQL-red.svg"/> <img src="https://img.shields.io/badge/language-Git/Linux-yellow.svg"/>
 
 Digital academy at BMSTU 2022-2023<br>
 Practical work - [👀](https://contest.yandex.ru/contest/40433/enter)<br>
@@ -19,7 +19,7 @@ Professor - [🧑‍💻](https://github.com/romvano/dc-web-developer-2022)
 7. [Week-07](https://github.com/IU5-IT/Digital-academy/tree/main/Python/01-week-07-DimaPermyakov)
 </details>
 
-### Module 2.
+### Module 2. Git/Linux.
 <details>
   <summary> Click to expand </summary>
   
